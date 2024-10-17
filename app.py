@@ -11,15 +11,10 @@ from surprise.model_selection import train_test_split, cross_validate
 # ------------------------------
 @st.cache_data()
 def load_data():
-    # Replace these with your actual data loading code
-    books_df = pd.read_csv(
-        "/content/drive/MyDrive/cleaned_books_data.csv"
-    )  # Contains 'book_id', 'title', 'authors', 'genres', 'description'
-    ratings_df = pd.read_csv(
-        "/content/drive/MyDrive/ratings.csv"
-    )  # Contains 'user_id', 'book_id', 'rating'
+    # Use the raw URL from GitHub
+    books_df = pd.read_csv("https://raw.githubusercontent.com/jana369/Book-Recommendation-System/main/cleaned_books_data.csv")
+    ratings_df = pd.read_csv("https://raw.githubusercontent.com/jana369/Book-Recommendation-System/main/ratings.csv")
     return books_df, ratings_df
-
 
 books_df, ratings_df = load_data()
 
