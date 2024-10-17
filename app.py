@@ -12,8 +12,8 @@ from surprise.model_selection import train_test_split, cross_validate
 @st.cache_data()
 def load_data():
     # Use the raw URL from GitHub
-    books_df = pd.read_csv("https://raw.githubusercontent.com/jana369/Book-Recommendation-System/main/cleaned_books_data.csv")
-    ratings_df = pd.read_csv("https://raw.githubusercontent.com/jana369/Book-Recommendation-System/main/ratings.csv")
+    books_df = pd.read_csv("https://raw.githubusercontent.com/jana369/Book-Recommendation-System/refs/heads/main/Copy_of_cleaned_books_data.csv")
+    ratings_df = pd.read_csv("https://raw.githubusercontent.com/jana369/Book-Recommendation-System/refs/heads/main/ratings.csv")
     return books_df, ratings_df
 
 books_df, ratings_df = load_data()
