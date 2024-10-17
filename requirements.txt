@@ -4,3 +4,4 @@ surprise
 scikit-learn
 cython
 numpy==1.24.4
+setuptools
