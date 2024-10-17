@@ -2,7 +2,4 @@ streamlit
 pandas
 surprise
 scikit-learn
-cython
-wheel
-setuptools
-numpy==1.23.5
+numpy
